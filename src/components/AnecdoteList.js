@@ -29,7 +29,7 @@ const AnecdotesList = () => {
       dispatch(voteFilter({ id, filterState }));
     }
     const anecdoteToChange = state.find((n) => n.id === id);
-    dispatch(setNotification(`you voted ${anecdoteToChange.content}`, 1));
+    dispatch(setNotification(`you voted ${anecdoteToChange.content}`, 5));
   };
 
   return store.getState().filters.length > 0 ? (
